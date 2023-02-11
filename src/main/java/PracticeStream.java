@@ -9,6 +9,10 @@ public class PracticeStream {
         br.close();
         return counter ;
     }
+    
+    /**
+    * اگر برای بایند کردن اطلاعات از استریم استفاده میکردی نیاز به کانتر و کد های اضافی نبود 
+    */
     public static Customers[] convert() throws IOException {
         BufferedReader br = new BufferedReader(new FileReader("churn.csv"));
         Customers[] customers = new Customers[size()-1] ;
